@@ -277,3 +277,65 @@ button p {
       width: 80%; 
     } 
   }
+  /* __________ 5/ PROPRIETES INHERENTES AUX ANIMATIONS __________ */
+/* __________ 5/1. Animation 1 __________ */
+article:hover > a > h2, article:hover > a > p, article:hover > a > img {
+    overflow: hidden;
+    transition: 0.3s;
+    opacity: 0.5;
+    transform: scale(1.3); 
+  }
+  @-webkit-keyframes loading {
+    0% {
+      opacity: 1; 
+    }
+    100% {
+      opacity: 0; 
+    } 
+  }
+  /* __________ 5/2. Animation 2 __________ */
+  .dot1 {
+    -webkit-animation: loading 2s ease-in-out infinite; 
+  }
+  .dot2 {
+    -webkit-animation: loading 2s ease-in-out infinite;
+    animation-delay: 0.4s; 
+  }
+  .dot3 {
+    -webkit-animation: loading 2s ease-in-out infinite;
+    animation-delay: 0.8s; 
+  }
+  /* __________ 5/3. Animation 3 __________ */
+  footer a:hover {
+    -webkit-animation: wiggle 0.1s alternate infinite ease-in-out; 
+  }
+  @keyframes wiggle {
+    0% {
+      -webkit-transform: rotate(5deg); 
+    }
+    50% {
+      -webkit-transform-origin: center; 
+    }
+    100% {
+      -webkit-transform: rotate(-5deg); 
+    } 
+  }
+  /* __________ 5/4. Animation 4 __________ */
+  .menu h3 {
+    position: relative;
+  }
+  .menu h3::after {
+    margin: auto;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid #333;  
+    width: 0%;
+    background: currentColor;
+    transition: 1s; 
+  }
+  .menu h3:hover::after {
+    width: 100%; 
+  }
+  
