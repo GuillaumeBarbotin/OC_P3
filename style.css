@@ -89,3 +89,144 @@ button p {
   font-size: 2rem;
   margin: 1rem; 
 }
+/* __________ 3/ PROPRIETES INHERENTES AUX PAGES DES MENUS __________ */
+.mainmenu {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8rem; 
+  }
+  .menu {
+    margin-top: 1rem;
+    box-shadow: 1px 1px 6px grey; 
+  }
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+  .menu h2 {
+    text-align: center;
+    font-size: 3rem;  
+  }
+  section {
+    margin: 2rem;
+  }
+  .menu h3 {
+    position: relative;
+    text-align: justify;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  .menu ul {
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    font-size: 1.3rem;
+    margin: 1rem auto;  
+  }
+  .menu li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  .title {
+    display: flex;
+    justify-content: center; 
+  }
+  .divider {
+    display: flex;  
+    justify-content: space-between;
+  }
+  .bar {
+    width: 30%;
+  }
+  .after {
+    transform: scaleX(-1);
+  }
+  /* __________ 4/ PROPRIETES INHERENTES AUX STYLES __________ */
+  /* __________ 4/1. Propriétés de <.style1> __________ */
+  .style1 {
+    background: #fcdfdb;  
+    font-family: 'Kalam', cursive;
+    color: #582f34;
+    font-size: 1.7rem;
+  }
+  .style1 h2 {
+    font-family: 'Devonshire', cursive; 
+  }
+  .note {
+    background: -webkit-gradient(linear, left top, right bottom, from(red), to(orange));
+    -webkit-background-clip: text;
+    color: transparent; 
+  }
+  .style1 h3 {
+    font-size: 2rem;  
+  }
+  .note {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;  
+  }
+  .down {
+    display: flex;
+    justify-content: center;
+  }
+  .down img {
+    height: 40px;
+    width: 40px;
+  }
+  /* __________ 1/X.b  Propriétés de <.style2> __________ */
+  .style2 {
+    background: #fff5fe;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.7rem; 
+  }
+  .style2 h2 {
+    font-family: 'Croissant One', cursive;
+  }
+  .style2 .starter {
+    color: #c67412; 
+  }
+  .style2 .dish {
+    color: #a56799; 
+  }
+  .style2 .dessert {
+    color: #6e4ccc; 
+  }
+  .gradient2 {
+    text-align: center;
+    background: -webkit-gradient(linear, left top, right bottom, from(#c77412), to(#905bfd));
+    -webkit-background-clip: text;
+    color: transparent; 
+  }
+  /* __________ 1/X.c  Propriétés de <.style3> __________ */
+  .style3 {
+    background: #f9f9f9;
+    font-family: 'Bad Script', cursive;
+    font-size: 1.7rem; 
+  }
+  .style3 h2 {
+    font-family: 'Dancing Script', cursive;
+  }
+  .gradient3 {
+    text-align: center;
+    background: -webkit-gradient(linear, left top, right bottom, from(#0228dd), to(#8dc5f5));
+    -webkit-background-clip: text;
+    color: transparent; 
+  }
+  /* __________ 1/X.d  Propriétés de <.style4> __________ */
+  .style4 {
+    background: #fdfffd;
+    font-family: 'Bad Script', cursive;  
+    font-size: 1.7rem; 
+  }
+  .style4 h2 {
+    font-family: 'Kaushan Script', cursive;
+  }
+  .gradient4 {
+    text-align: center;
+    background: -webkit-gradient(linear, left top, right bottom, from(#5eae4b), to(#c8fe94));
+    -webkit-background-clip: text;
+    color: transparent; 
+  }
