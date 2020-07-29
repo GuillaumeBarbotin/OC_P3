@@ -230,3 +230,50 @@ button p {
     -webkit-background-clip: text;
     color: transparent; 
   }
+  /* __________ 4/ PROPRIETES INHERENTES AU RESPONSIVE DESIGN __________ */
+@media screen and (max-width: 767px) {
+    .mainmenu {
+      flex-direction: column;
+      margin: 1rem; 
+    }
+    .divider {
+      flex-direction: column;
+      align-items: center; 
+    }
+    li {
+      flex-direction: column;
+      margin: 1rem; 
+    }
+    .button {
+      margin-bottom: 180px; 
+    }
+    footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+    } 
+  }
+  @media only screen and (min-width: 1294px) {
+    .links {
+      margin: auto;
+      width: 1000px; 
+    } 
+  }
+  @media only screen and (min-width: 1919px) {
+    body {
+      width: 80%;
+      margin: auto; 
+    }  
+    .menu {
+      font-size: 2.5rem; 
+    }
+    .menu h4 {
+      font-size: 2.5rem; 
+    }
+    li {
+      font-size: 2.5rem; 
+    }
+    footer {
+      width: 80%; 
+    } 
+  }
