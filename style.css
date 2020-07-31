@@ -106,7 +106,8 @@ button span {
   }
   .menu h2 {
     text-align: center;
-    font-size: 3rem;  
+    font-size: 3rem;
+    margin-top: 2rem;
   }
   section {
     margin: 2rem;
@@ -204,7 +205,8 @@ button span {
     text-align: center;
     background: -webkit-gradient(linear, left top, right bottom, from(#c77412), to(#905bfd));
     -webkit-background-clip: text;
-    color: transparent; 
+    color: transparent;
+    margin-top: 3rem;
   }
   /* __________ 1/X.c  Propriétés de <.style3> __________ */
   .style3 {
@@ -280,10 +282,6 @@ button span {
     .mainmenu {
         flex-direction: column;
         margin: 1rem; 
-    }
-    .divider {
-        flex-direction: column;
-        align-items: center; 
     }    
     li {
         flex-direction: column;
