@@ -13,10 +13,12 @@ header {
   justify-content: center;
   align-items: center;
 }
-header h1 {  
-  font-family: 'Righteous', cursive;
-  color: #fcca46;
-  font-size: 5rem;  
+header h1 {
+    font-family: Arial;
+    font-weight: bold;
+    letter-spacing: -7px;
+    color: #fcca46;
+    font-size: 5rem;  
 }
 /* __________ 1/3. Propriétés de <footer> __________ */
 footer {
@@ -70,9 +72,6 @@ footer a {
   width: 40px;
   margin-bottom: 2rem;
 }
-.link .gradient2 {
-  font-size: 1.4rem;
-}
 button {
   width: 350px;
   background: #579C87;
@@ -82,12 +81,13 @@ button {
   border: none;
   margin: auto;
   margin-bottom: 150px;
-}
-button p {
   font-family: 'Montserrat', sans-serif;
   color: #fcca46;
   font-size: 2rem;
-  margin: 1rem; 
+  padding: 1rem;  
+}
+button span {
+    margin-left: .5rem;
 }
 /* __________ 3/ PROPRIETES INHERENTES AUX PAGES DES MENUS __________ */
 .mainmenu {
@@ -114,14 +114,13 @@ button p {
   .menu h3 {
     position: relative;
     text-align: justify;
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
+    font-size: 1.6rem;    
   }
   .menu ul {
     text-align: center;
     font-family: 'Kalam', cursive;
     font-size: 1.3rem;
-    margin: 1rem auto;  
+    margin: 2rem auto 4rem;  
   }
   .menu li {
     display: flex;
@@ -152,12 +151,7 @@ button p {
   }
   .style1 h2 {
     font-family: 'Devonshire', cursive; 
-  }
-  .note {
-    background: -webkit-gradient(linear, left top, right bottom, from(red), to(orange));
-    -webkit-background-clip: text;
-    color: transparent; 
-  }
+  }  
   .style1 h3 {
     font-size: 2rem;  
   }
@@ -168,15 +162,24 @@ button p {
     justify-content: center;
     margin: 1rem auto;  
   }
+  .style1 span {
+      font-weight: bold;
+  }
   .down {
+    font-weight: bold;
     display: flex;
     justify-content: center;
+    margin-bottom: 4rem;
   }
   .down img {
     height: 40px;
     width: 40px;
+    margin-right: 1rem;
   }
   /* __________ 1/X.b  Propriétés de <.style2> __________ */
+  .link .gradient2 {
+    font-size: 1.4rem;
+  }
   .style2 {
     background: #fff5fe;
     font-family: 'Crimson Text', serif;
@@ -184,6 +187,9 @@ button p {
   }
   .style2 h2 {
     font-family: 'Croissant One', cursive;
+  }
+  .style2 p {
+    color: #c77412; 
   }
   .style2 .starter {
     color: #c67412; 
@@ -209,6 +215,9 @@ button p {
   .style3 h2 {
     font-family: 'Dancing Script', cursive;
   }
+  .style3 p {
+    color: #2b91f8; 
+  }
   .gradient3 {
     text-align: center;
     background: -webkit-gradient(linear, left top, right bottom, from(#0228dd), to(#8dc5f5));
@@ -224,6 +233,9 @@ button p {
   .style4 h2 {
     font-family: 'Kaushan Script', cursive;
   }
+  .style4 p {
+    color: #5eae4b; 
+  }
   .gradient4 {
     text-align: center;
     background: -webkit-gradient(linear, left top, right bottom, from(#5eae4b), to(#c8fe94));
@@ -231,37 +243,15 @@ button p {
     color: transparent; 
   }
   /* __________ 4/ PROPRIETES INHERENTES AU RESPONSIVE DESIGN __________ */
-@media screen and (max-width: 767px) {
-    .mainmenu {
-      flex-direction: column;
-      margin: 1rem; 
-    }
-    .divider {
-      flex-direction: column;
-      align-items: center; 
-    }
-    li {
-      flex-direction: column;
-      margin: 1rem; 
-    }
-    .button {
-      margin-bottom: 180px; 
-    }
-    footer {
-      display: flex;
-      flex-direction: column;
-      align-items: center; 
-    } 
-  }
-  @media only screen and (min-width: 1294px) {
+
+  @media only screen and (min-width: 1200.02px) {
     .links {
       margin: auto;
       width: 1000px; 
     } 
   }
   @media only screen and (min-width: 1919px) {
-    body {
-      width: 80%;
+    body {      
       margin: auto; 
     }  
     .menu {
@@ -272,11 +262,51 @@ button p {
     }
     li {
       font-size: 2.5rem; 
-    }
-    footer {
-      width: 80%; 
-    } 
+    }    
   }
+  /* extra-small => portables en format portrait */
+@media (max-width: 576px) {
+    
+}
+/* small => portables en format paysage */
+@media (max-width: 768px) {
+    .link {
+        height: 400px;
+        width: 250px;
+    }
+    .link .gradient2 {
+        font-size: 1.4rem;
+    }
+    .mainmenu {
+        flex-direction: column;
+        margin: 1rem; 
+    }
+    .divider {
+        flex-direction: column;
+        align-items: center; 
+    }    
+    li {
+        flex-direction: column;
+        margin: 1rem; 
+    }
+    .button {
+        margin-bottom: 180px; 
+    }    
+    footer a {  
+        font-family: 'Montserrat', sans-serif;
+        color: #fcca46;
+        font-size: 1.4rem;  
+        margin: 1rem;
+    }    
+}
+/* medium => tablettes */
+@media (max-width: 992px) {
+    
+}
+/* large => écrans PC < 12 pouces */
+@media (max-width: 1200px) {
+    
+}
   /* __________ 5/ PROPRIETES INHERENTES AUX ANIMATIONS __________ */
 /* __________ 5/1. Animation 1 __________ */
 article:hover > a > h2, article:hover > a > p, article:hover > a > img {
