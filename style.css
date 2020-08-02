@@ -258,17 +258,38 @@ button span {
     }  
     .menu {
       font-size: 2.5rem; 
-    }
-    .menu h4 {
-      font-size: 2.5rem; 
-    }
+    }    
     li {
       font-size: 2.5rem; 
     }    
   }
   /* extra-small => portables en format portrait */
 @media (max-width: 576px) {
-    
+  header h1 {
+    font-size: 3.5rem;    
+  }
+  button {
+    width: 250px;
+    font-size: 1.5rem;
+  }
+  footer a {
+    font-size: 1.2rem;
+  }
+  .title {
+    font-size: 1.4rem;
+  }
+  .menu h2 {
+    font-size: 2rem;    
+  }
+  .menu h3 {
+    font-size: 1.3rem;
+  }
+  li {
+    font-size: 1rem;
+  }
+  .menu p {
+    font-size: 1.3rem;
+  }
 }
 /* small => portables en format paysage */
 @media (max-width: 768px) {
@@ -282,9 +303,13 @@ button span {
     .mainmenu {
         flex-direction: column;
         margin: 1rem; 
-    }    
+    } 
+    .menu h3 {      
+      text-align: center;
+    }   
     li {
         flex-direction: column;
+        text-align: center;        
         margin: 1rem; 
     }
     .button {
